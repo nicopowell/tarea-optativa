@@ -15,8 +15,12 @@ main {
 
 .banner {
   width: 100%;
-  max-height: 200px;
+  max-height: 250px;
   object-fit: cover;
+}
+
+h4 {
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -25,5 +29,8 @@ main {
   }
   aside {
     width: 25%;
+  }
+  #bannerDallE {
+    object-position: 0% 25%;
   }
 }
