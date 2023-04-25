@@ -74,8 +74,9 @@
         </div>
       </nav>
     </header>
-    <main class="container d-flex flex-column flex-lg-row">
-      <div class="articulo">
+    <main class="container">
+      <div class="row">
+        <div class="articulo col-lg-9">
         <section class="my-5">
           <h1 class="text-center display-4">Bing AI</h1>
           <hr />
@@ -113,8 +114,9 @@
           </p>
         </section>
       </div>
-      <aside class="ps-lg-5 py-5">
-        <h5 class="display-6 pb-3">Tambien podria interesarte</h5>
+      <aside class="ps-lg-5 py-5 col-lg-3">
+        <h5 class="display-6">Tambien podria interesarte</h5>
+        <hr>
         <div class="row gap-5">
           <article class="col-12">
             <a href="../pages/chatGPT.html" class="text-decoration-none"
@@ -154,6 +156,45 @@
           </article>
         </div>
       </aside>
+      <section>
+        <hr>
+        <h5 class="display-6 pb-3">Comentarios</h5>
+        <form id="formularioComentario">
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="mb-3">
+            <label for="comentario" class="form-label">Comentario</label>
+            <textarea class="form-control" id="comentario"></textarea>
+          </div>
+          <div class="w-100 d-flex justify-content-end mt-3">
+            <button class="btn btn-primary" type="submit">Agregar comentario</button>
+          </div>
+        </form>
+        <hr>
+        <ul class="list-group list-group-flush" id="contenedorComentarios">
+        </ul>
+        <hr>
+      </section>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Suscribete a nuestro boletin de notificaciones</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <img class="w-100" src="https://www.blogtyrant.com/wp-content/uploads/2019/11/how-to-promote-your-blog-2.png" alt="Promo image">
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <a href="./404.html" class="btn btn-primary px-5">Suscribirse</a>
+          </div>
+        </div>
+      </div>
+    </div>
     </main>
     <footer class="bg-dark text-light text-center py-3">
       <p>&copy; Todos los derechos reservados</p>

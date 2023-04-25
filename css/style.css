@@ -37,13 +37,17 @@ h4 {
   object-fit: cover;
 }
 
+li {
+  list-style: none;
+}
+
 @media screen and (min-width: 992px) {
-  .articulo {
+  /* .articulo {
     width: 75%;
   }
   aside {
     width: 25%;
-  }
+  } */
   #bannerDallE {
     object-position: 0% 25%;
   }
